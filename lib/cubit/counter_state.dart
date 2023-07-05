@@ -1,15 +1,15 @@
 part of 'counter_cubit.dart';
 
 @immutable
-abstract class CounterState {
+abstract class CounterCubitState {
   final int counter;
-  const CounterState({required this.counter});
+  const CounterCubitState({required this.counter});
 }
 
-class CounterInitial extends CounterState {
+class CounterInitial extends CounterCubitState {
   const CounterInitial({required int startValue}) : super(counter: startValue);
 }
 
-class MyCounterState extends CounterState {
+class MyCounterState extends CounterCubitState {
   const MyCounterState({required int newValue}) : super(counter: newValue);
 }
